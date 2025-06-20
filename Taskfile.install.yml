@@ -1,11 +1,11 @@
-version: '3'
+version: "3"
 
 vars:
-  HELM_VERSION: 3.12.3
-  K3D_VERSION: 5.5.2
-  K9S_VERSION: 0.27.4
-  KUBECTL_VERSION: 1.28.0
-  TILT_VERSION: 0.33.4
+  HELM_VERSION: 3.17.0
+  K3D_VERSION: 5.8.3
+  K9S_VERSION: 0.50.6
+  KUBECTL_VERSION: 1.31.0
+  TILT_VERSION: 0.35.0
 
 tasks:
   helm:
@@ -30,7 +30,7 @@ tasks:
       - tar -xzvf k9s_Linux_amd64.tar.gz
       - sudo mv k9s /usr/local/bin/
       - mkdir -p ~/.config/k9s
-      - sudo wget -O ~/.config/k9s/skin.yml https://raw.githubusercontent.com/derailed/k9s/master/skins/solarized_light.yml
+      - sudo wget -O ~/.config/k9s/skin.yml https://raw.githubusercontent.com/derailed/k9s/master/skins/solarized-light.yaml
 
   kubectl:
     dir: /tmp
