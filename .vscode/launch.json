@@ -1,0 +1,28 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python Debugger: Current File",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${file}",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Python: FastAPI",
+      "type": "python",
+      "request": "launch",
+      "module": "uvicorn",
+      "cwd": "${workspaceFolder}/banking_core/src",
+      "envFile": "${workspaceFolder}/banking_core/.env",
+      "args": [
+        "main:app",
+        "--port",
+        "5001",
+        "--reload"
+      ],
+      "jinja": true,
+      "justMyCode": true
+    },
+  ]
+}
