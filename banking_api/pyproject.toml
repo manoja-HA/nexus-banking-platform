@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "banking_core"
+name = "banking_api"
 version = "0.1.0"
 description = ""
 authors = [

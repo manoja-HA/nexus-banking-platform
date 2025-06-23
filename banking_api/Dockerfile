@@ -4,7 +4,7 @@
 # Stage: base-deps
 FROM python:3.12-slim AS base-deps
 
-ENV WORKSPACE_PATH=/workspace/banking_core
+ENV WORKSPACE_PATH=/workspace/banking_api
 ENV POETRY_VERSION=1.5.1
 ENV PYTHONPATH=$PYTHONPATH:${WORKSPACE_PATH}/src
 ENV PYTHONUNBUFFERED=1
